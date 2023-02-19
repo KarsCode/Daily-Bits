@@ -4,7 +4,7 @@ function searchBar(query){
     
 }
 let apiKey='00e337ab4e5c43d99fb17167c3fb754f';
-let searchQuery='international';
+let searchQuery='entertainment';
 let finQuery=searchQuery+' english'; // post language modifier
 let newsAccoridion = document.getElementById('newsAccordion');
 const xhr = new XMLHttpRequest();
