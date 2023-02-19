@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+       India News
+    </title>
+    
+    <link rel="stylesheet" href="homestyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+  </head>
+
+  <body>
+    <header id="nav_main">
+      <div id="first">
+        <div id="second">
+          <div>
+              <a href="home.html" class="link">
+                <img
+                  src="headimage-removebg-preview.png"
+                  alt=""
+                  class="Logo"
+                />
+              </a>
+          </div>
+        </div>
+        </div>
+        </header>
+        <br><br><br><br><br><br>
+
+
+        <div id='cssmenu'>
+            <ul>
+            <li><a href="india.html"><span>India</span></a></li><br>
+            <li><a href="entertainment.html"><span>Entertainment</span></a></li><br>
+            <li><a href="sports.html"><span>Sports</span></a></li><br>
+            <li><a href='"lifestyle.html"'><span>Lifestyle</span></a></li><br>   
+            <li><a href="business.html"><span>Business</span></a></li><br>
+            <li><a href="world.html"><span>World</span></a></li><br>  
+            <li><a href="login.html">Login</a></li><br>  
+            </ul>
+            </div>
+   <div id="t1">
+    <a href="https://economictimes.indiatimes.com/news/newsblogs/daily-news-and-latest-updates-live-19-february-2023/liveblog/98054653.cms"><img id="n1"
+        width="550" height="350" src="https://img.etimg.com/thumb/msid-98054653,width-294,resizemode-4,imgsize-51580/daily-news-and-latest-updates-live-19-february-2023.jpg"></a>
+    <p id="p1"> Chandrayaan 3 News Live: The moon lander part of India's third lunar mission Chandrayaan-3, successfully underwent the EMI-EMC (Electro-Magnetic Interference/ Electro-Magnetic Compatibility) test recently, the Indian Space Research Organisation (ISRO) said on Sunday. </p>
+    </div>
+    <a href="https://www.hindustantimes.com/india-news/sanjay-raut-rahul-gandhi-of-maharashtra-bjp-on-rs-2-000-crore-deal-claim-101676810286718.html"><img id="n2" width="350" height="250" src="https://www.hindustantimes.com/ht-img/img/2023/02/19/550x309/sanjay_raut_1676810325111_1676810325304_1676810325304.jpg"></a>
+    <img id="n3" width="350" height="250" src="https://www.hindustantimes.com/ht-img/img/2023/02/19/550x309/PAN_1665109768499_1676806182575_1676806182575.png">
+    
+    <p id="p2">Sanjay Raut's claim that there has been a transaction of ₹2,000 crore behind the election commission's order giving the bow and the arrow symbol to the Eknath Shinde faction triggered a massive controversy with the Shinde camp and the BJP strongly condemning the slander. BJp national spokesperson Shehzad Poonawalla called Sanjay Raut the Rahul Gandhi of Maharashtra "who reduced Uddhav Sena to a Congress-style party that abuses and insults constitutional institutions like ECI by scurrilous allegations when the verdict goes against them".</p>
+    <p id="p3">Lost your PAN card? Here's how you can reapply for it. If you have lost or misplaced your PAN card, you can apply for a duplicate PAN either online or offline.</p>
+    
+    <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+
+      <button id="DM">Dark Mode</button>
+      <div id = "MyClockDisplay" class = "clock" onload = "showTime()"> </div>  
+<script>  
+function showTime(){  
+    var date = new Date();  
+    var h = date.getHours();  
+    var m = date.getMinutes();  
+    var s = date.getSeconds();  
+    var session = "AM";  
+    if(h == 0) {  
+        h = 12;  
+    }  
+    if(h > 12) {  
+        hh = h - 12;  
+        session = "PM";  
+    }  
+    h = (h < 10) ? "0" + h : h;  
+    m = (m < 10) ? "0" + m : m;  
+    s = (s < 10) ? "0" + s : s;  
+    var time = h + ":" + m + ":" + s + " " + session;  
+    document.getElementById("MyClockDisplay").innerText = time;  
+    document.getElementById("MyClockDisplay").textContent = time;  
+    setTimeout(showTime, 1000);  
+}  
+showTime();  
+</script>  
+</body>
+
+    </html>
+    
+     
+ 

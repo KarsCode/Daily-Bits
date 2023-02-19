@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+       World News
+    </title>
+    
+    <link rel="stylesheet" href="homestyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+  </head>
+
+  <body>
+    <header id="nav_main">
+      <div id="first">
+        <div id="second">
+          <div>
+              <a href="home.html" class="link">
+                <img
+                  src="headimage-removebg-preview.png"
+                  alt=""
+                  class="Logo"
+                />
+              </a>
+          </div>
+        </div>
+        </div>
+        </header>
+        <br><br><br><br><br><br>
+
+
+        <div id='cssmenu'>
+            <ul>
+            <li><a href="india.html"><span>India</span></a></li><br>
+            <li><a href="entertainment.html"><span>Entertainment</span></a></li><br>
+            <li><a href="sports.html"><span>Sports</span></a></li><br>
+            <li><a href="lifestyle.html"><span>Lifestyle</span></a></li><br>   
+            <li><a href="business.html"><span>Business</span></a></li><br>
+            <li><a href="world.html"><span>World</span></a></li><br>  
+            <li><a href='login.html'>Login</a></li><br>  
+            </ul>
+            </div>
+   <div id="t1">
+   <a href="https://www.aljazeera.com/news/2023/2/19/earthquake-rescue-operations-ended-in-most-turkey-provinces-afad"><img id="n1"
+    width="550" height="350" src="https://www.aljazeera.com/wp-content/uploads/2023/02/2023-02-18T204825Z_831294781_RC2MDZ9JA6K7_RTRMADP_3_TURKEY-QUAKE.jpg?resize=770%2C513&quality=80"></a> 
+    <p id="p1"> The Turkish Disaster and Emergency Management Presidency (AFAD) says search and rescue operations have ended in most provinces nearly two weeks after this month’s devastating earthquakes in Turkey and Syria.
+
+        “The death toll due to the earthquakes rose to 40,642, and the work of searching and rescue for people stuck under the debris has ended in most of the provinces,” Yunis Sezar, head of AFAD, said in a presser on Saturday.</p>
+    </div>
+    <img id="n2" width="350" height="250" src="https://www.aljazeera.com/wp-content/uploads/2023/02/2022-07-09T021823Z_2078387647_RC228V95X9ZY_RTRMADP_3_G20-INDONESIA-BLINKEN-WANG.jpg?resize=770%2C513&quality=80">
+    <img id="n3" width="350" height="250" src="https://www.aljazeera.com/wp-content/uploads/2022/12/11104919.jpg?resize=770%2C513&quality=80">
+    
+    <p id="p2">Blinken meets China’s Wang Yi, warns against helping Russia
+
+        Top diplomats hold ‘direct, candid’ talks in Munich amid tensions over Russia’s invasion of Ukraine and the downing of a suspected Chinese spying balloon.</p>
+    <p id="p3">China has declared a “decisive victory” over the COVID-19 pandemic, claiming the world’s lowest death rate, although experts have questioned Beijing’s data as the coronavirus surged across the country after largely being kept at bay for three years.
+
+The world’s most populated nation abruptly ended its zero-COVID policy in early December, with 80 percent of its 1.4 billion population becoming infected, a prominent government scientist said last month.</p>
+   
+    <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+
+    <button id="DM">Dark Mode</button>
+    <div id = "MyClockDisplay" class = "clock" onload = "showTime()"> </div>  
+<script>  
+function showTime(){  
+    var date = new Date();  
+    var h = date.getHours();  
+    var m = date.getMinutes();  
+    var s = date.getSeconds();  
+    var session = "AM";  
+    if(h == 0) {  
+        h = 12;  
+    }  
+    if(h > 12) {  
+        hh = h - 12;  
+        session = "PM";  
+    }  
+    h = (h < 10) ? "0" + h : h;  
+    m = (m < 10) ? "0" + m : m;  
+    s = (s < 10) ? "0" + s : s;  
+    var time = h + ":" + m + ":" + s + " " + session;  
+    document.getElementById("MyClockDisplay").innerText = time;  
+    document.getElementById("MyClockDisplay").textContent = time;  
+    setTimeout(showTime, 1000);  
+}  
+showTime();  
+</script>  
+
+
+
+</body>
+
+    </html>
+    
+     
+ 

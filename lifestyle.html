@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+       Lifestyle News
+    </title>
+    
+    <link rel="stylesheet" href="homestyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+  </head>
+
+  <body>
+    <header id="nav_main">
+      <div id="first">
+        <div id="second">
+          <div>
+              <a href="home.html" class="link">
+                <img
+                  src="headimage-removebg-preview.png"
+                  alt=""
+                  class="Logo"
+                />
+              </a>
+          </div>
+        </div>
+        </div>
+        </header>
+        <br><br><br><br><br><br>
+
+
+        <div id='cssmenu'>
+            <ul>
+            <li><a href="india.html"><span>India</span></a></li><br>
+            <li><a href="entertainment.html"><span>Entertainment</span></a></li><br>
+            <li><a href="sports.html"><span>Sports</span></a></li><br>
+            <li><a href="lifestyle.html"><span>Lifestyle</span></a></li><br>   
+            <li><a href="business.html"><span>Business</span></a></li><br>
+            <li><a href="world.html"><span>World</span></a></li><br>  
+            <li><a href="login.html">Login</a></li><br>  
+            </ul>
+            </div>
+   <div id="t1">
+    <a href="https://www.bollywoodhungama.com/news/features/anil-kapoor-master-trades-night-manager-proves/"><img id="n1"
+      width="550" height="350" src="https://media5.bollywoodhungama.in/wp-content/uploads/2023/02/Anil-Kapoor-is-a-master-of-all-trades-and-The-Night-Manager-proves-it-1.jpg"></a>
+    <p id="p1"> Anil Kapoor's The Night Manager is finally out now. The thrill & excitement to see Anil Kapoor as the antagonist was unmatched. It’s not often that viewers are rooting for an antagonist & waiting eagerly for his screen timing. Even at the age of 66, Anil Kapoor is complimenting his co-stars and looking like a million bucks.</p>
+    </div>
+    
+
+    <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <button id="DM">Dark Mode</button>
+      <div id = "MyClockDisplay" class = "clock" onload = "showTime()"> </div>  
+<script>  
+function showTime(){  
+    var date = new Date();  
+    var h = date.getHours();  
+    var m = date.getMinutes();  
+    var s = date.getSeconds();  
+    var session = "AM";  
+    if(h == 0) {  
+        h = 12;  
+    }  
+    if(h > 12) {  
+        hh = h - 12;  
+        session = "PM";  
+    }  
+    h = (h < 10) ? "0" + h : h;  
+    m = (m < 10) ? "0" + m : m;  
+    s = (s < 10) ? "0" + s : s;  
+    var time = h + ":" + m + ":" + s + " " + session;  
+    document.getElementById("MyClockDisplay").innerText = time;  
+    document.getElementById("MyClockDisplay").textContent = time;  
+    setTimeout(showTime, 1000);  
+}  
+showTime();  
+</script>  
+
+</body>
+
+
+    </html>
+    
+     
+ 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+       Sports News
+    </title>
+    
+    <link rel="stylesheet" href="homestyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+  </head>
+
+  <body>
+    <header id="nav_main">
+      <div id="first">
+        <div id="second">
+          <div>
+              <a href="home.html" class="link">
+                <img
+                  src="headimage-removebg-preview.png"
+                  alt=""
+                  class="Logo"
+                />
+              </a>
+          </div>
+        </div>
+        </div>
+        </header>
+        <br><br><br><br><br><br>
+
+
+        <div id='cssmenu'>
+            <ul>
+            <li><a href="india.html"><span>India</span></a></li><br>
+            <li><a href="entertainment.html"><span>Entertainment</span></a></li><br>
+            <li><a href="sports.html"><span>Sports</span></a></li><br>
+            <li><a href="lifestyle.html"><span>Lifestyle</span></a></li><br>   
+            <li><a href="business.html"><span>Business</span></a></li><br>
+            <li><a href="world.html"><span>World</span></a></li><br>  
+            <li><a href="login.html">Login</a></li><br>  
+            </ul>
+            </div>
+   <div id="t1">
+    <a href="https://www.latimes.com/sports/lakers/story/2023-02-07/lebron-james-passes-kareem-abdul-jabbar-nba-scoring-leader"><img id="n1"
+        width="550" height="350" src="https://ca-times.brightspotcdn.com/dims4/default/71842da/2147483647/strip/true/crop/3977x2651+0+0/resize/2000x1333!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fbe%2Fa3%2F3687f7c24b7585a21c3c3fa56bc1%2Fla-sp-lebron-kareem-illustration-homepage.jpg"></a>
+   
+    <p id="p1">How LeBron James claimed the NBA's all time scoring record (Click Image)</p>
+    </div>
+    <img id="n2" width="350" height="250" src="https://static.toiimg.com/thumb/msid-98063437,imgsize-34474,width-400,resizemode-4/98063437.jpg">
+    <img id="n3" width="350" height="250" src="https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/8E5F/production/_128674463_gettyimages-1247258783.jpg">
+    <img id="n4" width="350" height="250" src="https://www.hindustantimes.com/ht-img/img/2023/02/19/550x309/McClung_moment_1676780000141_1676780013883_1676780013883.jpeg">
+    <img id="n5" width="350" height="250" src="https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/6501/production/_128675852_38f90e09-0e82-47b6-83a6-20b97301eb5a.jpg">
+    <p id="p2">KL Rahul's woeful form continued with the Indian opener enduring yet another failure in the second test match.Rohit Sharma breaks his silence on KL Rahul's prolonged poor form.
+</p>
+    <p id="p3">"Unacceptable" draw at Nottingham Forest sparks a spur at City camp. Kyle Walker said Manchester City's performance was "not acceptable" after they missed the opportunity to return to the top of the Premier League with a draw against Nottingham Forest at the City Ground.</p>
+    <p id="p4">Leigh Wood v Mauricio Lara: Briton loses world title with stoppage defeat in thrilling fightLeigh Wood's reign as WBA featherweight champion is over after the Briton lost in devastating fashion to hard-hitting Mauricio Lara in Nottingham. </p>
+    <p id="p5">NBA All-Star weekend day 2 highlights: State Farm Saturday night Skills Challenge, 3-point Contest, Slam Dunk Contest. The second day of NBA All-Star weekend will featured the most anticipated annual basketball events; Skills Challenge, 3 Point Contest and Slam Dunk Contest. Catch all action that took place on State Farm All-Star Saturday Night here</p>
+
+    <form class="example" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+
+      <button id="DM">Dark Mode</button>
+      <div id = "MyClockDisplay" class = "clock" onload = "showTime()"> </div>  
+<script>  
+function showTime(){  
+    var date = new Date();  
+    var h = date.getHours();  
+    var m = date.getMinutes();  
+    var s = date.getSeconds();  
+    var session = "AM";  
+    if(h == 0) {  
+        h = 12;  
+    }  
+    if(h > 12) {  
+        hh = h - 12;  
+        session = "PM";  
+    }  
+    h = (h < 10) ? "0" + h : h;  
+    m = (m < 10) ? "0" + m : m;  
+    s = (s < 10) ? "0" + s : s;  
+    var time = h + ":" + m + ":" + s + " " + session;  
+    document.getElementById("MyClockDisplay").innerText = time;  
+    document.getElementById("MyClockDisplay").textContent = time;  
+    setTimeout(showTime, 1000);  
+}  
+showTime();  
+</script>  
+</body>
+
+
+    </html>
+    
+     
+ 
