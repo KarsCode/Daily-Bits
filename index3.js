@@ -1,14 +1,16 @@
 console.log(0);
 let a=0;
-function searchBar(query){
-    
-}
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+let dateq=dd+'-'+mm+'-'+yyyy;
 let apiKey='00e337ab4e5c43d99fb17167c3fb754f';
 let searchQuery='entertainment';
 let finQuery=searchQuery+' english'; // post language modifier
 let newsAccoridion = document.getElementById('newsAccordion');
 const xhr = new XMLHttpRequest();
-xhr.open('GET',`https://newsapi.org/v2/everything?q=${finQuery}&from=2023-01-19&sortBy=publishedAt&apiKey=${apiKey}`,true);
+xhr.open('GET',`https://newsapi.org/v2/everything?q=${finQuery}&from=${dateq}&sortBy=publishedAt&apiKey=${apiKey}`,true);
 xhr.onload = function(){
     if(this.status==200){
         let json = JSON.parse(this.responseText);
