@@ -1,4 +1,12 @@
 console.log(0);
+
+
+
+function searchButton(){
+    var dataPassed= document.forms["searchForm"]["searchh"].value;
+    localStorage.setItem('objectToPass',myData);
+    window.location.replace('./search.html');
+}
 let a=0;
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
@@ -21,6 +29,7 @@ xhr.onload = function(){
         articles.forEach(function(element){
         document.getElementById("para"+a+"span").innerHTML=`${element["content"]}`;
         document.getElementById("n"+a).src=`${element["urlToImage"]}`;
+        document.getElementById("link"+a).href=`${element["url"]}`;
         a++;
         })
         
